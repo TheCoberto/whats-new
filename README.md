@@ -25,6 +25,8 @@ Intro text, on the first screen.
 <!-- left out of the menu -->
 ```
 
+That folder also needs a `permissions.json` (a copy of `config/default/permissions.json`): once a module has its own config folder, BDS reads its allowed modules from there, and without one the add-on fails with "requesting dependency on module [@minecraft/server] but it is not configured to use it". `publish-whats-new.ps1` adds it.
+
 Without an `update:` line the title is used, so a new title also counts as a new update. Fixing a typo without changing `update:` doesn't show the menu again to players who closed it.
 
 After changing the file on the server, run `scriptevent thecoberto:whatsnew_reload` in the console (or `/thecoberto:whatsnewreload` as an operator) so the add-on re-reads it; the console prints the update it now has. If it still shows the old one, restart the server.
