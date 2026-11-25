@@ -1,0 +1,36 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [ "TheCoberto" ]
+	},
+	"header": {
+		"name": "What's New",
+		"description": "A What's New menu players see once after each server update, and any time with /thecoberto:whatsnew.",
+		"min_engine_version": [ 1, 26, 60 ],
+		"uuid": "ca6cc5c7-9730-422f-95f8-baa5cf44981a",
+		"version": [ 1, 0, 0 ]
+	},
+	"modules": [
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "911336de-f70b-4030-b030-4e15eb9fae6a",
+			"entry": "scripts/main.js",
+			"version": [ 1, 0, 0 ]
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.12.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "2.4.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-admin",
+			"version": "1.0.0-beta"
+		}
+	]
+}
